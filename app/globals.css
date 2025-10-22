@@ -113,29 +113,48 @@
   }
 }
 
-/* Theme configuration for Tailwind CSS v4 */
+/* Theme configuration for Tailwind CSS v4 - Yethi Cedar Dark Theme */
 @theme {
-  --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(240 10% 3.9%);
-  --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(240 10% 3.9%);
-  --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(240 10% 3.9%);
-  --color-primary: hsl(25 95% 53%);
-  --color-primary-foreground: hsl(0 0% 98%);
-  --color-secondary: hsl(240 4.8% 95.9%);
-  --color-secondary-foreground: hsl(240 5.9% 10%);
-  --color-muted: hsl(240 4.8% 95.9%);
-  --color-muted-foreground: hsl(240 3.8% 46.1%);
-  --color-accent: hsl(240 4.8% 95.9%);
-  --color-accent-foreground: hsl(240 5.9% 10%);
-  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-background: hsl(0 0% 10%);
+  --color-foreground: hsl(0 0% 88%);
+  --color-card: hsl(0 0% 12%);
+  --color-card-foreground: hsl(0 0% 88%);
+  --color-popover: hsl(0 0% 12%);
+  --color-popover-foreground: hsl(0 0% 88%);
+  --color-primary: hsl(207 100% 43%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(0 0% 15%);
+  --color-secondary-foreground: hsl(0 0% 69%);
+  --color-muted: hsl(0 0% 15%);
+  --color-muted-foreground: hsl(0 0% 50%);
+  --color-accent: hsl(207 100% 43%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-destructive: hsl(0 72% 51%);
   --color-destructive-foreground: hsl(0 0% 98%);
-  --color-border: hsl(240 5.9% 90%);
-  --color-input: hsl(240 5.9% 90%);
-  --color-ring: hsl(25 95% 53%);
+  --color-border: hsl(0 0% 25%);
+  --color-input: hsl(0 0% 25%);
+  --color-ring: hsl(207 100% 43%);
+  --color-success: hsl(134 61% 41%);
+  --color-warning: hsl(45 93% 47%);
   
   --radius: 0.5rem;
+}
+
+:root {
+  /* Yethi Cedar Color System */
+  --yc-bg-primary: #1a1a1a;
+  --yc-bg-secondary: #1e1e1e;
+  --yc-bg-tertiary: #252525;
+  --yc-text-primary: #e0e0e0;
+  --yc-text-secondary: #b0b0b0;
+  --yc-text-tertiary: #808080;
+  --yc-accent-blue: #0078d4;
+  --yc-accent-blue-hover: #005a9e;
+  --yc-success: #28a745;
+  --yc-warning: #ffc107;
+  --yc-danger: #dc3545;
+  --yc-border: #404040;
+  --yc-border-secondary: #333333;
 }
 
 @layer utilities {
@@ -148,6 +167,25 @@
   .scrollbar-hide {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Custom scrollbar styling */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: var(--yc-bg-secondary);
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--yc-border);
+    border-radius: 4px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: var(--yc-text-tertiary);
   }
   
   /* Radial gradient utilities */
