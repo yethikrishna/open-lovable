@@ -18,6 +18,7 @@
     "@ai-sdk/groq": "^2.0.0",
     "@ai-sdk/openai": "^2.0.4",
     "@anthropic-ai/sdk": "^0.57.0",
+    "@blinkdotnew/sdk": "^1.0.0",
     "@e2b/code-interpreter": "^1.5.1",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-switch": "^1.2.5",
