@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MainLayout from "@/components/MainLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Open Lovable",
-  description: "Re-imagine any website in seconds with AI-powered website builder.",
+  title: "Yethi Cedar - ASI-Level AI IDE",
+  description: "Fully featured agentic AI web-based coding and integrated development environment with multi-agent functionality. Developed by Yethikrishna R.",
 };
 
 export default function RootLayout({
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
